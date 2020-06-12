@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "150ee277273971f8fecb37b2ce61ffc1",
+    "revision": "bbf1530eba396a387b6e3058e3c9911e",
     "url": "/adisriv.live/index.html"
   },
   {
-    "revision": "c2fc2f0714e36bc5af53",
+    "revision": "4ea4d070a35ee39853bc",
     "url": "/adisriv.live/static/css/main.314fe966.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/adisriv.live/static/js/2.3c74f364.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c2fc2f0714e36bc5af53",
-    "url": "/adisriv.live/static/js/main.253f0a53.chunk.js"
+    "revision": "4ea4d070a35ee39853bc",
+    "url": "/adisriv.live/static/js/main.80d28062.chunk.js"
   },
   {
     "revision": "51ab7b833ba3f118c92c",
