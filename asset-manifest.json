@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/adisriv.live/static/css/main.314fe966.chunk.css",
+    "main.js": "/adisriv.live/static/js/main.253f0a53.chunk.js",
+    "main.js.map": "/adisriv.live/static/js/main.253f0a53.chunk.js.map",
+    "runtime-main.js": "/adisriv.live/static/js/runtime-main.bd94da2a.js",
+    "runtime-main.js.map": "/adisriv.live/static/js/runtime-main.bd94da2a.js.map",
+    "static/js/2.3c74f364.chunk.js": "/adisriv.live/static/js/2.3c74f364.chunk.js",
+    "static/js/2.3c74f364.chunk.js.map": "/adisriv.live/static/js/2.3c74f364.chunk.js.map",
+    "index.html": "/adisriv.live/index.html",
+    "precache-manifest.95d280908a98e66a27da68f27e90dd3d.js": "/adisriv.live/precache-manifest.95d280908a98e66a27da68f27e90dd3d.js",
+    "service-worker.js": "/adisriv.live/service-worker.js",
+    "static/css/main.314fe966.chunk.css.map": "/adisriv.live/static/css/main.314fe966.chunk.css.map",
+    "static/js/2.3c74f364.chunk.js.LICENSE.txt": "/adisriv.live/static/js/2.3c74f364.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bd94da2a.js",
+    "static/js/2.3c74f364.chunk.js",
+    "static/css/main.314fe966.chunk.css",
+    "static/js/main.253f0a53.chunk.js"
+  ]
+}
