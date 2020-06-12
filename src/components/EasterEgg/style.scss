@@ -1,0 +1,247 @@
+
+// inspired from: https://codepen.io/deren2525/pen/rgqeZQ
+$BG: #19333f;
+$SPACESHIP_TOP: #3f4952;
+$SPACESHIP_UNDER: #13a79d;
+$SPACESHIP_UNDER2: #0e7972;
+$LIGHT: #f4ca5a;
+$ALIEN: #e86e7b;
+
+@import url("https://fonts.googleapis.com/css?family=Cute+Font&display=swap");
+
+html {
+  width: 100%;
+  height: 100%;
+  // overflow: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: $BG;
+}
+
+* {
+  &:before,
+  &:after {
+    position: absolute;
+    content: "";
+  }
+}
+
+.spaceships {
+  $base: &;
+  position: absolute;
+  top: calc(50% - 100px);
+  left: calc(50% - 165px);
+  width: 330px;
+  height: 200px;
+  animation: spaceships 8s infinite alternate;
+  transform: scale(0.5);
+  &:hover {
+    #{$base} {
+      &__head {
+        transform: rotate(68deg);
+        transition: 0.5s;
+        left: 45px;
+      }
+    }
+  }
+  &__head {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: 215px;
+    height: 131px;
+    overflow: hidden;
+    z-index: 10;
+    transform-origin: bottom right;
+    transform: rotate(0);
+    transition: 0.5s;
+    &:before {
+      width: 215px;
+      height: 181px;
+      border-radius: 50%;
+      background-color: $SPACESHIP_TOP;
+    }
+  }
+  &__body {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 320px;
+    height: 115px;
+    overflow: hidden;
+    border-radius: 50%;
+    z-index: 5;
+    background-color: $SPACESHIP_UNDER2;
+    &:before {
+      position: absolute;
+      left: -12px;
+      width: 320px;
+      height: 115px;
+      border-radius: 50%;
+      background-color: $SPACESHIP_UNDER;
+      top: -8px;
+    }
+    &:after {
+      top: 10px;
+      left: 56px;
+      width: 203px;
+      height: 50px;
+      border-radius: 50% 50% 20% 20%;
+      background-color: $SPACESHIP_TOP;
+    }
+  }
+  &__light {
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid $LIGHT;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+  }
+  &__foot {
+    position: absolute;
+    top: 165px;
+    left: 120px;
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $LIGHT;
+    z-index: 1;
+    &:before {
+      left: -73px;
+      top: -10px;
+      width: 70px;
+      height: 50px;
+      transform: rotateZ(10deg);
+      border-radius: 50%;
+      background-color: $LIGHT;
+    }
+    &:after {
+      left: 73px;
+      top: -10px;
+      width: 70px;
+      height: 50px;
+      transform: rotateZ(-10deg);
+      border-radius: 50%;
+      background-color: $LIGHT;
+    }
+  }
+}
+
+.alien {
+  position: absolute;
+  width: 110px;
+  height: 120px;
+  top: 48px;
+  z-index: 9;
+  left: 108px;
+  transition: 0.2s;
+  &__body {
+    width: 110px;
+    height: 93px;
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    background-color: $ALIEN;
+  }
+  &__eye {
+    position: absolute;
+    top: 15px;
+    left: 23px;
+    width: 63px;
+    height: 62px;
+    background-color: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    &:before {
+      position: absolute;
+      top: 6px;
+      left: 21px;
+      width: 35px;
+      height: 35px;
+      background-color: #000;
+      border-radius: 50%;
+    }
+    &:after {
+      position: absolute;
+      top: 0;
+      left: -8px;
+      width: 80px;
+      height: 62px;
+      background-color: $ALIEN;
+      border-radius: 50%;
+      animation: eye 3s infinite alternate;
+    }
+  }
+  &__ear {
+    position: absolute;
+    top: -15px;
+    left: 37px;
+    width: 10px;
+    height: 30px;
+    -webkit-transform: rotateZ(-28deg);
+    transform: rotateZ(-28deg);
+    background-color: $ALIEN;
+    &:before {
+      position: absolute;
+      top: -25px;
+      left: -8px;
+      width: 25px;
+      height: 30px;
+      background-color: $ALIEN;
+      border-radius: 50%;
+    }
+  }
+}
+
+@keyframes spaceships {
+  0% {
+    bottom: calc(50% - 10px);
+    transform: rotate(0deg) scale(0.5);
+  }
+
+  25% {
+    bottom: calc(50% - 20px);
+    transform: rotate(10deg) scale(0.5);
+  }
+
+  50% {
+    bottom: calc(50% - 20px);
+    transform: rotate(0deg) scale(0.5);
+  }
+
+  75% {
+    bottom: calc(50% - 20px);
+    transform: rotate(-10deg) scale(0.5);
+  }
+}
+
+@keyframes eye {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: -90px;
+  }
+  50% {
+    top: 0px;
+  }
+  75% {
+    top: -90px;
+  }
+  100% {
+    top: -90px;
+  }
+}
+
+.text {
+  text-align: center;
+  font-size: 100px;
+  color: #fff;
+  font-family: "Cute Font", cursive;
+  p {
+      margin: 0
+  }
+}
