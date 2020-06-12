@@ -13,11 +13,11 @@ import './style.scss';
 
 const App = (props) => {
   return (
-    <Router>
+    <Router basename={window.location.pathname || ''}>
       <div>
         <NavBar />
         <Switch>
-          <Route component={Home} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/work" component={Work} />
           <Route exact path="/projects" component={Projects} />

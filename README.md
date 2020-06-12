@@ -1,68 +1,32 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# My Personal Website
 
-## Available Scripts
+[Link to My Website](https://adisriv.live/) created in React.
 
-In the project directory, you can run:
+## Creating React App
 
-### `npm start`
+1. Create an empty repository on github: `<repo-name>`
+2. Then on your computer in terminal type: `npx create-react-app <repo-name>`, this will create a react app named `<repo-name>` in whichever directory you're on.
+3. `cd <app-name>`
+4. Next, create a git repository in the folder of the react app: `git init`
+5. Add the empty repository you created in step 1 as a "remote" in your local git repository: `git remote add origin https://github.com/username/<repo-name>.git`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## How to Deploy
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+ 1. `npm i gh-pages --save-dev` (--save-dev adds the installed package to your `package.json` file so that if anyone else clones your repo they will be able to retrieve all the needed packages for the app through `npm install`)
+ 2. Add some properties to your app's `package.json` file
+			 1. At the top, somewhere under `"name"`, add `"homepage": "http://<username>.github.io/<repo-name>"`, the url for homepage in this case is your github pages link, but you can also add whichever link you want this app to be displayed at.
+			 2. In the `scripts` property, add the following `"predeploy": "npm run build"` and `"deploy": "gh-pages -d build"`
+3. Then to generate a production build of your react app type `npm run deploy`
+			1. Now this will push your production build to github under the `gh-pages` branch, and your app will be now accessible under the URL you provided in `"homepage"`
+4. Then push your source code up to the `master` branch as this does not exist on github yet
+			1. `git add .`
+			2. `git commit -m "Your Message"`
+			3. `git push origin master`
+			4. Now this will create your `master` branch and push your code their.  
 
-### `npm test`
+## Helpful Resources
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Creating React App](https://create-react-app.dev/docs/getting-started/)
+[Deploying React App to Github Pages](https://github.com/gitname/react-gh-pages)
+[Installing NPM Packages](https://www.npmjs.com/)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

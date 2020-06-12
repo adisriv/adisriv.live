@@ -2,7 +2,7 @@
   "name": "adisriv",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://adisriv.github.io/adisriv.live",
+  "homepage": "https://adisriv.live/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
