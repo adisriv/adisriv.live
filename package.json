@@ -47,6 +47,7 @@
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "sass-loader": "^8.0.2",
+    "social-media-icons-react": "^1.0.10",
     "style-loader": "^1.2.1"
   }
 }
