@@ -26,7 +26,9 @@
 
 ## Helpful Resources
 
-[Creating React App](https://create-react-app.dev/docs/getting-started/)
-[Deploying React App to Github Pages](https://github.com/gitname/react-gh-pages)
+[Creating React App](https://create-react-app.dev/docs/getting-started/)  
+
+[Deploying React App to Github Pages](https://github.com/gitname/react-gh-pages)  
+
 [Installing NPM Packages](https://www.npmjs.com/)
 
