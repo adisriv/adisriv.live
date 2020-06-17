@@ -12,8 +12,7 @@ const Home = (props) => {
         <Typing speed={75}>
           <div className="intro-2">Aditya Srivastava.</div>
           <div className="intro-3">I enjoy coding simple solutions to complex problems.</div>
-          <div className="intro-4">I am a software engineer, who is interested in software development roles. Dartmouth College Class of 2020, double major in Computer Science and
-            Economics.
+          <div className="intro-4">I am a software engineer, who is interested in software development roles in a variety of industries. Please reach out if you would like to discuss projects, roles, and/or open positions!
           </div>
         </Typing>
       </div>
