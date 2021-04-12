@@ -2,6 +2,10 @@
 
 [Link to My Website](https://adisriv.live/) created in React.
 
+All code is written by me, Aditya, Srivastava, and parts that were either inspired by or based on code found on the web have been given credit in their respective files.
+
+Below I have outlined how anyone can create a react project, and then deploy their site to gh-pages, if you have any questions please submit an issue to this repo.
+
 ## Creating React App
 
 1. Create an empty repository on github: `<repo-name>`

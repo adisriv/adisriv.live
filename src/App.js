@@ -11,7 +11,7 @@ import EasterEgg from './components/EasterEgg/easterEgg';
 import NavBar from './components/NavBar/navBar';
 import './style.scss';
 
-const App = (props) => {
+function App() {
   return (
     <Router basename={window.location.pathname || ''}>
       <div>
@@ -20,7 +20,7 @@ const App = (props) => {
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />
-          <Route exact path="/photography" component={Photography} />
+          {/* <Route exact path="/photography" component={Photography} /> */}
           {/* <Route exact path="/contact" component={Contact} /> */}
           <Route component={EasterEgg} />
         </Switch>

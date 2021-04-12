@@ -1,82 +1,22 @@
-.wrapper {
-//   position: relative;
-    margin-top: -120px;
-    height: 350px;
-//   background-color: #f5f5f5;
+
+.page {
+  margin-left: 18%;
+  width: 82%;
 }
-.round-image{
-  border-radius:100%;
-  height: 250px; 
-  margin: 0 auto;
-  top: 50px;
-  left: 38%;
-  width: 300px; 
-  overflow:hidden;
-  position: absolute;
-  z-index: 1;
-  border: 2px solid #CCD5DB;
-}
+
+
 #LineTime{
   position: absolute;
   right: 0;
   width: 60%;
   color: #6b6b6b;
 }
-.footer{
-  margin-left: -64%;
-  border-top: 1px solid #E4EAEC;
-  width: 160%;
-  padding: 10px;
-}
-.one{
-  text-align: center;
-  padding: 0px 10px;
-}
-.Portfolio_title{
-  font-size: 30px;
-  font-weight: bold;
-  width: 300px;
-  color: #ffffff;
-}
-.Portfolio_title > p{
-  font-weight: lighter;
-  font-size: 20px;
-  color: #4AA6C7;
-}
-.portfolio_content{
-  padding: 15px 10px;
-  width: 450px;
-  border-spacing:10px;
-  color: #ffffff;
-}
-#Portfolio{
-  padding-left: 25px;
-  padding-top: 25px;
-  position: absolute;
-}
-  #centerpixel{
-    position: absolute;
-    width:100%;
-  }
-@media screen and (max-width: 990px){
-  #centerpixel{
-    position: absolute;
-    width:100%;
-  }
-  #Portfolio{
-    width: 100%;
-  }
-  .inner{
-    display: table;
-    margin: 0 auto;
-  }
-  .Portfolio_title{
-    text-align: center;
-  }
+
   #LineTime{
-    margin-top: 500px;
+    margin-top: 10%;
+    margin-left: 23%;
     left: 0;
-    width: 100%;
+    width: 70%;
   }
   .footer{
     margin-left: auto;
@@ -86,108 +26,6 @@
   .wrapper{
     width: 100%;
   }
-  .outer-image{
-    width: 50%;
-    margin-top: -50px;
-    // margin: 0 auto;
-  }
-  .round-image{
-    left: 45%;
-    margin-left: -100px;
-  }
-}
-/*Contact form;type=form*/
-#mailer{
-	height: 320px;
-	max-width: 900px;
-	width: 100%;
-	margin: 0 auto;
-	margin-top: 3px;
-}
-/*Input name+email;type=text*/
-#mailer > .name input, #mailer > .email input{
-	max-width: 900px;
-	height: 40px;
-	width: 100%;
-	margin-bottom: 5px;
-	border-radius: 5px;
-}
-/*Input message;type=text*/
-#mailer > .text textarea{
-	max-width: 900px;
-	width: 100%;
-	height: 150px;
-	margin-bottom: 5px;
-	border-radius: 5px;
-	resize: none;
-}
-/*Send button;type=submit*/
-#mailer > .submit input{
-	width: 150px;
-	height: 40px;
-	float: right;
-	border-radius: 5px;
-}
-/*Reset button;type=reset*/
-#mailer > .reset input{
-	width: 150px;
-	height: 40px;
-	float: left;
-	border-radius: 5px;
-}
-#mailer > .name input, #mailer > .email input, #mailer > .text textarea{
-	border: 1px solid #e5e5e5;
-}
-#mailer > .submit input, #mailer > .reset input{
-	color: #6b6b6b;
-	border: 1px solid #e5e5e5;
-	background-color: #f5f5f5;
- }
- #mailer > .submit input:hover, #mailer > .reset input:hover{
-	background-color: #6b6b6b;
-	color: #f5f5f5;
- }
-
-/*Mail was sent*/
-#wraptheform{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    max-width: 910px;
-    margin: 0 auto;
-    margin-left: -37%;
-    margin-bottom: 50px;
-    margin-top: -200px;
-}
-@media screen and (max-width: 990px){
-	#wraptheform{
-		margin-top: -100px;
-		margin-left: 2.5% !important;
-		width: 95%;
-	}
-}
-#contactwas{
-	color: #a0a0a0;
-	display: none;
-	font-weight: bold;
-	font-size: 30px;
-	z-index: 1;
-	position: absolute;
-	top: 80px;
-	left: 50%;
-	margin-left: -172px;
-}
-#contactform{
-	text-align: center;
-	color: #6E6E6E;
-}
-body {
-  // color: #768390;
-  background: #F5F5F5;
-  // font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-}
 
 h1,
 h2,
